@@ -1,5 +1,5 @@
 function quantity(){
- let a = parseInt(prompt("Cuantas veces queres que te pregunte (maximo 5 veces):"));
+ let a = parseInt(prompt("Cuantas veces queres que te pregunte:"));
  answers(a);
 }
 
