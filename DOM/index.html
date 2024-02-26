@@ -7,6 +7,27 @@
     <title>Document Object Movement</title>
 </head>
 <body>
+    <div class="container">
+        
+        <form>
+            <label for="weight" >Peso (en Kilogramos)</label>
+            <input type="number" name="weight" id="weight" placeholder="0.00">
+
+            <label for="height">Altura (en Centimetros)</label>
+            <input type="number" name="height" id="height"placeholder="1.50">
+
+            <input type="button" onclick="infoCaption()" value="Calcular">
+
+        </form>
+
+    
+
+    <div class="result">
+        <a class="resultTittle">RESULTADO: </a>
+        <div  id="resultado"></div>
+    </div>
+
+</div>
     
 
     <script src="main.js"> </script>
