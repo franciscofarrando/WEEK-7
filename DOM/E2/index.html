@@ -3,11 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document Object Movement - E2</title>
 </head>
 <body>
-   
+    <div class="container">
+        
+        <form>
+            <label for="name" >Nombre/s:</label>
+            <input type="text" name="name" id="name" placeholder="Nombre/s">
+
+            <label for="sirname" >Apellido/s:</label>
+            <input type="text" name="sirname" id="sirname" placeholder="Apellido/s">
+
+         
+        </form>
+
+        <div class="sala">
+            <div class="screen">
+                <a>PANTALLA</a>
+                <table class="cinema">
+                    <tr class="seat">
+                        <th>F/A</th>
+                        <th>A1</th>
+                        <th>A2</th>
+                        <th>A3</th>
+                        <th>A4</th>
+                    </tr>
+                    <tr class="row">
+                        <th>F1</th>
+                        <td><input type="checkbox" id="seat" name="F1-A1"
+                                value="F1-A1"></td>
+                        <td><input type="checkbox" id="seat" name="F1-A2"
+                                value="F1-A2"></td>
+                        <td><input type="checkbox" id="seat" name="F1-A3"
+                                value="F1-A3"></td>
+                        <td><input type="checkbox" id="seat" name="F1-A4"
+                                value="F1-A4"></td>
+                    </tr>
+                    <tr class="row">
+                        <th>F2</th>
+                        <td><input type="checkbox" id="seat" name="F2-A1"
+                                value="F2-A1"></td>
+                        <td><input type="checkbox" id="seat" name="F1-A2"
+                                value="F2-A2"></td>
+                        <td><input type="checkbox" id="seat" name="F2-A3"
+                                value="F2-A3"></td>
+                        <td><input type="checkbox" id="seat" name="F2-A4"
+                                value="F2-A4"></td>
+                    </tr>
+                    <tr class="row">
+                        <th>F3</th>
+                        <td><input type="checkbox" id="seat" name="F3-A1"
+                                value="F3-A1"></td>
+                        <td><input type="checkbox" id="seat" name="F3-A2"
+                                value="F3-A2"></td>
+                        <td><input type="checkbox" id="seat" name="F3-A3"
+                                value="F3-A3"></td>
+                        <td><input type="checkbox" id="seat" name="F3-A4"
+                                value="F3-A4"></td>
+                    </tr>
+                    <tr class="row">
+                        <th>F4</th>
+                        <td><input type="checkbox" id="seat" name="F4-A1"
+                                value="F4-A1"></td>
+                        <td><input type="checkbox" id="seat" name="F4-A2"
+                                value="F4-A2"></td>
+                        <td><input type="checkbox" id="seat" name="F4-A3"
+                                value="F4-A3"></td>
+                        <td><input type="checkbox" id="seat" name="F4-A4"
+                                value="F4-A4"></td>
+                    </tr>
+                   
+                    
+                </table>
+                <input type="button" onclick="infoCaption()" value="Comprar">
+            </div>
     
+
+
+            <div class="ticket">
+                <div class="baseTicket">
+                    <span style="font-size: xxx-large; font-weight: bolder;">Cinepolis</span>
+                    <br>
+                    <span style="font-size: x-large">Pelicula: Avengers</span>
+                    <span style="font-size: x-large">Horario 18:20</span>
+
+                    </div>
+                <div class="ticketInfo">  
+                    <span style="font-size:large; font-weight: bold;">Nombre/s:</span>
+                    <div  id="resultName"></div>
+                    <span style="font-size:large; font-weight: bold;">Apellido/s:</span>
+                    <div  id="resultSN"></div>
+                    <span style="font-size:large; font-weight: bold;">Asiento/s:</span>
+                    <div  id="resultSeat"></div>
+                                    
+                </div>
+                <div class="codeBar"></div>
+            </div> 
+            </div>
 
 
 
