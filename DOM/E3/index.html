@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document Object Movement - E2</title>
+</head>
+<body>
+    <div class="sala">
+        <div class="screen">
+            <a>PANTALLA</a>
+            <table class="cinema">
+                <tr class="seat">
+                    <th>F/A</th>
+                    <th>A1</th>
+                    <th>A2</th>
+                    <th>A3</th>
+                    <th>A4</th>
+                </tr>
+                <tr class="row">
+                    <th>F1</th>
+                    <td><input type="checkbox" id="F1-A1" name="seat" value="F1-A1"></td>
+                    <td><input type="checkbox" id="F1-A2" name="seat" value="F1-A2"></td>
+                    <td><input type="checkbox" id="F1-A3" name="seat" value="F1-A3"></td>
+                    <td><input type="checkbox" id="F1-A4" name="seat" value="F1-A4"></td>
+                </tr>
+                <!-- Agrega el resto de las filas de asientos aquí -->
+
+            </table>
+            <input type="button" onclick="infoCaption()" value="Comprar">
+            <div id="resultadoSeleccion"></div> <!-- Este es el div donde se mostrarán los asientos seleccionados -->
+        </div>
+    </div>
+
+    <script src="main.js"></script> 
+</body>
+</html>
